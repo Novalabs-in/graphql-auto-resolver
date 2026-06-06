@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphql-auto-resolver"
+version = "1.0.0"
+description = "SQL Schema introspector engine that automatically yields full GraphQL types and resolvers."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pytest>=7.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
